@@ -11,24 +11,29 @@
     </head>
     <body>
 <div id='wrapper'>
-	<div id='header'>
-		<h1>BlueTracker</h1>
-		<div id='filters'>
-			<a href="#">Some Filters Here</a>
-			<form id='add-item'>
-			                        <button type='submit'>Add</button>
-			                        <div><input type='text' id='new-item-text' placeholder='Enter new task' /></div>
-			                    </form>
-			
-		</div>
-	</div>
+	<div id='sidebar'>
+		<h5>BlueTracker</h5>
+		<form id='track-mac'>
+			<div><input type='text' id='new-item-text' placeholder='Track Mac Address' /></div>
+		                        <button type='submit'>Track</button>
+		                        
+		                    </form>
+
+		
+		
+    <button id="buttonLoadLatest">Track Latest</button> 
+
+
+</div>
 	<div id='map'></div>
 
             
         </div>
 
 		<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-        <script src='https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.9.1.min.js'></script>
+        <!--<script src='https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.9.1.min.js'></script>-->
+                <script src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+
         <script src='http://ajax.aspnetcdn.com/ajax/mobileservices/MobileServices.Web-1.2.5.min.js'></script>
         <script src='page.js'></script>
     </body>
