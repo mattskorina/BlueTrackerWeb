@@ -1,6 +1,6 @@
 $(function() {
     var client = new WindowsAzure.MobileServiceClient('https://bluetracker.azure-mobile.net/', 'TxAUyFMxPNQFYYZbJygdGIlRUieXdW86'),
-        todoItemTable = client.getTable('todoitem');
+        todoItemTable = client.getTable('locations');
 
     // Read current data and rebuild UI.
     // If you plan to generate complex UIs like this, consider using a JavaScript templating library.
@@ -60,3 +60,15 @@ $(function() {
     // On initial load, start by fetching the current data
     refreshTodoItems();
 });
+
+var map = L.map('map').setView([42.05345, -87.67274], 19);
+
+		L.tileLayer('https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png', {
+			maxZoom: 22,
+			attribution: '<a href="http://mapbox.com">Mapbox</a>',
+			id: 'examples.map-i875mjb7'
+		}).addTo(map);
+	
+
+
+		
